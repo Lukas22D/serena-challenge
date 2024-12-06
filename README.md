@@ -28,9 +28,11 @@ O sistema deverá ter usuário logado para permitir acesso à área de propostas
 ##### Rotas:
 
 - `[POST] /users` - Criar um usuário
+
   ![Criar um usuário](img/01.png)
 
 - `[POST] /users/login` - Logar usuário
+
   ![Logar usuário](img/02.png)
 
 - `[GET] /users/:access_token/verify` - Validar token de usuário
