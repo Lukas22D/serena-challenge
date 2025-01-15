@@ -1,0 +1,35 @@
+{
+  "name": "serena-challenge",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "dev": "ts-node ./src/infra/adapters/web/app.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omega-energia/serena-challenge.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/omega-energia/serena-challenge/issues"
+  },
+  "homepage": "https://github.com/omega-energia/serena-challenge#readme",
+  "description": "",
+  "dependencies": {
+    "@types/express": "^5.0.0",
+    "@types/jest": "^29.5.14",
+    "express": "^4.21.2",
+    "jest": "^29.7.0",
+    "pg": "^8.13.1",
+    "reflect-metadata": "^0.2.2",
+    "ts-jest": "^29.2.5",
+    "typeorm": "^0.3.20",
+    "typescript": "^5.7.3"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2"
+  }
+}
