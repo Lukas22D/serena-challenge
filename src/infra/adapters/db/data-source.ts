@@ -9,7 +9,8 @@ const dataSource = new DataSource({
   database: 'serena',
   synchronize: true, // Usar com cautela em produção
   logging: true,
-  entities: [User],
+  entities: [`${__dirname}/**/src/infra/adapters/db/model/*{.ts,.js}`], 
+  migrations: [`${__dirname}/**/migrations/*{.ts,.js}`]
 });
 
 export default dataSource;

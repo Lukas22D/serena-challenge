@@ -1,6 +1,6 @@
 import UserDB from "../infra/adapters/db/model/UserDB";
 import User from "../application/domain/User";
-import dataSource from "../infra/adapters/db/ConfigDB";
+import dataSource from "../infra/adapters/db/data-source";
 
 // Conectando-se ao banco de dados antes de todos os testes
 beforeAll(async () => {
@@ -47,7 +47,10 @@ it("should throw an error if the email is invalid", () => {
 });
 
 it("should create a user and save it in the database", async () => {
-  const user = new UserDB("John Doe", "blabla1@gmail.com", "12345678");
+  const user = new UserDB();
+  user.name = "John Doe";
+  user.email = "dfkd@gmail.com";
+  user.password = "12345678";
   
   // Aguarde a operação de salvar
   await user.save();
