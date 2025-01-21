@@ -1,5 +1,5 @@
 import User from "../domain/User";
-import { PersistenceDB } from "../../infra/gateways/PersistenceDB";
+import { PersistenceDB } from "../../infra/gateways/PersistenceUser";
 
 
 export default class CreateUser {

@@ -1,4 +1,4 @@
-import { PersistenceDB } from "../../infra/gateways/PersistenceDB";
+import { PersistenceDB } from "../../infra/gateways/PersistenceUser";
 import { UserPersistence
     
  } from "../../infra/adapters/db/UserPersistence";
